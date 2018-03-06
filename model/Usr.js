@@ -5,6 +5,7 @@ var Usr = new Schema({
     psw        : String,
     create_date: { type: Date, default: Date.now }
 });
+
 // 创建model对象
 var UsrModel = mongoose.model('usr', Usr);
 // 公开对象，暴露接口
